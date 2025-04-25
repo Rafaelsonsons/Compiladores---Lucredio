@@ -22,5 +22,5 @@ Compile com java passando dois argumentos
 
 Para rodar o corretor disponível em <https://github.com/dlucredio/compiladores-corretor-automatico/> use este comando na pasta do programa corretor:
 
-  `java -jar target/compiladores-corretor-automatico-1.0-SNAPSHOT-jar-with-dependencies.jar "java -jar ~/{path/to/lexer}/alguma-lexico/target/alguma-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar" gcc ~/temp ~//TestFiles/casos-de-teste/casos-de-teste/ "RA" gabarito-t1
+  `java -jar target/compiladores-corretor-automatico-1.0-SNAPSHOT-jar-with-dependencies.jar "java -jar ~/{path/to/lexer}/alguma-lexico/target/alguma-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar" gcc ~/temp ~//TestFiles/casos-de-teste/casos-de-teste/ "RA" t1
 `
