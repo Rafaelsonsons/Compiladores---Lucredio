@@ -43,11 +43,14 @@ COMENTARIO_ABERTO   : '{' ~('\n'|'\r'|'{'|'}' )* '\r'? '\n'?;
 programa: declaracoes 'algoritmo' corpo 'fim_algoritmo' EOF;
 
 declaracoes: (declaracao_local | declaracao_global)*;
-declaracao_local: 'declare' variavel
-    | 'constante' IDENT ':' tipo_basico '=' valor_constante
-    | 'tipo' IDENT ':' tipo;
+declaracao_local: declaracao_variavel | declaracao_constante | declaracao_tipo;
+
 declaracao_global: 'procedimento' IDENT '(' parametros? ')' corpo 'fim_procedimento'
     | 'funcao' IDENT '(' parametros? ')' ':' tipo_estendido corpo 'fim_funcao';
+
+declaracao_constante: 'constante' IDENT ':' tipo_basico '=' valor_constante;
+declaracao_variavel: 'declare' variavel;
+declaracao_tipo: 'tipo' IDENT ':' tipo;
 
 variavel: identificador (',' identificador)* ':' tipo;
 identificador: IDENT ('.' IDENT)* dimensao;
@@ -105,5 +108,5 @@ parcela_logica: 'verdadeiro' | 'falso' | exp_relacional;
 op_logico_1: 'ou';
 op_logico_2: 'e';
 
-//Definir erro por ultimo
+//Definir erro por ultimo: lembrar disso
 ERRO: . ;

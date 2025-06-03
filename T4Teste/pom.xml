@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>br.ufscar.dc.compiladores</groupId>
-  <artifactId>T3Teste</artifactId>
+  <artifactId>T4Teste</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>T3Teste</name>
+  <name>T4Teste</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 

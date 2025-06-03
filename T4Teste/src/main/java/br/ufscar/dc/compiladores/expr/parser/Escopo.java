@@ -4,27 +4,27 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Escopo {
+    private LinkedList<TabelaDeSimbolos> pilhaTabela;
 
-    private LinkedList<TabelaDeSimbolos> pilhaDeTabelas;
-
-    public Escopo() {
-        pilhaDeTabelas = new LinkedList<>();
-        criarNovoEscopo();
+    public Escopo(TabelaDeSimbolos.TipoAlguma tipo){
+        pilhaTabela = new LinkedList<>();
+        novoEscopo(tipo);
     }
 
-    public void criarNovoEscopo() {
-        pilhaDeTabelas.push(new TabelaDeSimbolos());
+    public void novoEscopo(TabelaDeSimbolos.TipoAlguma tipo) {
+        pilhaTabela.push(new TabelaDeSimbolos(tipo));
     }
 
-    public TabelaDeSimbolos obterEscopoAtual() {
-        return pilhaDeTabelas.peek();
+    public TabelaDeSimbolos getEscopo(){
+        return  pilhaTabela.peek();
     }
 
-    public List<TabelaDeSimbolos> percorrerEscoposAninhados() {
-        return pilhaDeTabelas;
+    public void delEscopo(){
+        pilhaTabela.pop();
     }
 
-    public void abandonarEscopo() {
-        pilhaDeTabelas.pop();
+    public List<TabelaDeSimbolos> getPilhaTabela(){
+        return pilhaTabela;
     }
+    //Baseado no exemplo de aula, modificado
 }

@@ -33,6 +33,7 @@ public class Principal {
             for (String error : AlgumaSemanticoUtils.errosSemanticos){
                 pw.println(error);
             }
+            //execução do analisador, mesma coisa que o T3, sem mudar
             pw.println("Fim da compilacao");
         } catch(FileNotFoundException fnfe) {
             System.err.println("O arquivo/diretório não existe:"+args[1]);

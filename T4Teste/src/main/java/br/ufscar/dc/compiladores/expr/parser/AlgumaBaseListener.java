@@ -1,6 +1,5 @@
-// Generated from C:/Compiladores/T3Teste/src/main/antlr4.br.ufscar.dc.compiladores.expr.parser/Alguma.g4 by ANTLR 4.13.2
+// Generated from C:/Users/felip/Desktop/Docs_Yuya/UFSCar/COMPL/T4Teste/src/main/antlr4.br.ufscar.dc.compiladores.expr.parser/Alguma.g4 by ANTLR 4.13.2
 package br.ufscar.dc.compiladores.expr.parser;
-
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
@@ -60,6 +59,42 @@ public class AlgumaBaseListener implements AlgumaListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitDeclaracao_global(AlgumaParser.Declaracao_globalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDeclaracao_constante(AlgumaParser.Declaracao_constanteContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDeclaracao_constante(AlgumaParser.Declaracao_constanteContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDeclaracao_variavel(AlgumaParser.Declaracao_variavelContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDeclaracao_variavel(AlgumaParser.Declaracao_variavelContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDeclaracao_tipo(AlgumaParser.Declaracao_tipoContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDeclaracao_tipo(AlgumaParser.Declaracao_tipoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

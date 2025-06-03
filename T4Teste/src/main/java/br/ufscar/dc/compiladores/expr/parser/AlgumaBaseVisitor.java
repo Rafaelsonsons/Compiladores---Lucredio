@@ -1,6 +1,5 @@
-// Generated from C:/Compiladores/T3Teste/src/main/antlr4.br.ufscar.dc.compiladores.expr.parser/Alguma.g4 by ANTLR 4.13.2
+// Generated from C:/Users/felip/Desktop/Docs_Yuya/UFSCar/COMPL/T4Teste/src/main/antlr4.br.ufscar.dc.compiladores.expr.parser/Alguma.g4 by ANTLR 4.13.2
 package br.ufscar.dc.compiladores.expr.parser;
-
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -41,6 +40,27 @@ public class AlgumaBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitDeclaracao_global(AlgumaParser.Declaracao_globalContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitDeclaracao_constante(AlgumaParser.Declaracao_constanteContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitDeclaracao_variavel(AlgumaParser.Declaracao_variavelContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitDeclaracao_tipo(AlgumaParser.Declaracao_tipoContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *

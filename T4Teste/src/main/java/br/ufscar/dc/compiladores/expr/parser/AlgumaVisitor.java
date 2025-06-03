@@ -1,6 +1,5 @@
-// Generated from C:/Compiladores/T3Teste/src/main/antlr4.br.ufscar.dc.compiladores.expr.parser/Alguma.g4 by ANTLR 4.13.2
+// Generated from C:/Users/felip/Desktop/Docs_Yuya/UFSCar/COMPL/T4Teste/src/main/antlr4.br.ufscar.dc.compiladores.expr.parser/Alguma.g4 by ANTLR 4.13.2
 package br.ufscar.dc.compiladores.expr.parser;
-
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -35,6 +34,24 @@ public interface AlgumaVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitDeclaracao_global(AlgumaParser.Declaracao_globalContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link AlgumaParser#declaracao_constante}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDeclaracao_constante(AlgumaParser.Declaracao_constanteContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link AlgumaParser#declaracao_variavel}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDeclaracao_variavel(AlgumaParser.Declaracao_variavelContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link AlgumaParser#declaracao_tipo}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDeclaracao_tipo(AlgumaParser.Declaracao_tipoContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link AlgumaParser#variavel}.
 	 * @param ctx the parse tree

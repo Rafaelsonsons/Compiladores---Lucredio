@@ -1,8 +1,6 @@
-// Generated from C:/Compiladores/T3Teste/src/main/antlr4.br.ufscar.dc.compiladores.expr.parser/Alguma.g4 by ANTLR 4.13.2
+// Generated from C:/Users/felip/Desktop/Docs_Yuya/UFSCar/COMPL/T4Teste/src/main/antlr4.br.ufscar.dc.compiladores.expr.parser/Alguma.g4 by ANTLR 4.13.2
 package br.ufscar.dc.compiladores.expr.parser;
-
 import org.antlr.v4.runtime.tree.ParseTreeListener;
-
 
 /**
  * This interface defines a complete listener for a parse tree produced by
@@ -49,6 +47,36 @@ public interface AlgumaListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDeclaracao_global(AlgumaParser.Declaracao_globalContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link AlgumaParser#declaracao_constante}.
+	 * @param ctx the parse tree
+	 */
+	void enterDeclaracao_constante(AlgumaParser.Declaracao_constanteContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link AlgumaParser#declaracao_constante}.
+	 * @param ctx the parse tree
+	 */
+	void exitDeclaracao_constante(AlgumaParser.Declaracao_constanteContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link AlgumaParser#declaracao_variavel}.
+	 * @param ctx the parse tree
+	 */
+	void enterDeclaracao_variavel(AlgumaParser.Declaracao_variavelContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link AlgumaParser#declaracao_variavel}.
+	 * @param ctx the parse tree
+	 */
+	void exitDeclaracao_variavel(AlgumaParser.Declaracao_variavelContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link AlgumaParser#declaracao_tipo}.
+	 * @param ctx the parse tree
+	 */
+	void enterDeclaracao_tipo(AlgumaParser.Declaracao_tipoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link AlgumaParser#declaracao_tipo}.
+	 * @param ctx the parse tree
+	 */
+	void exitDeclaracao_tipo(AlgumaParser.Declaracao_tipoContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link AlgumaParser#variavel}.
 	 * @param ctx the parse tree
